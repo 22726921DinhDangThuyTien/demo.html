@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Document </title>
+        <style> 
+            body { 
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            form { 
+                margin: 100px auto;
+                width: 300px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                text-align: left;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input [ type="text"] , input[type="password"] {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            .gender, .options{ 
+                margin-bottom: 10px;
+                
+            }
+            .gender input { 
+                margin-right: 5px;
+            }
+            .option input {
+                margin-right: 10px;
+            }
+            input [type="submit"] {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                background-color: #f0f0f0;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+            input [type="submit"]:hover {
+                background-color: #ddd;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <form ACTION="/sumit" method="post"> 
+            <label for="username"> User name </label>
+            <input type="text" id=" username" name="username" required> 
+
+            <label for="password"> Password </label>
+            <input type="password" id=" password" name="password" required> 
+
+            <div class="gender"> 
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male"> Nam </label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female"> Nu </label>
+            </div>
+
+            <div class="options">
+                <input type="checkbox" id="TrungNguyen" name="option" value="TrungNguyen">
+                <label for="TrungNguyen"> TrungNguyen </label>
+
+                <input type="checkbox" id="MeKong" name="option" value="MeKong">
+                <label for="MeKong"> MeKong </label>
+
+                <input type="checkbox" id="Newblue" name="option" value="Newblue">
+                <label for="Newblue"> Newblue </label>
+
+                <input type="checkbox" id="TraSua" name="option" value="TraSua">
+                <label for="TraSua"> TraSua </label>
+        
+            </div>
+
+            <input type=" sumit" value="Nhap">
+
+               
+
+    
+        </form>
+    </body>
+</html>
